@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集三标题</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="dark-bg">
+  <div class="work-container">
+    <header class="work-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <h1>The Worst QA Tester Ever</h1>
+    </header>
+    
+    <main class="work-detail">
+      <!-- 图片轮播 -->
+      <div class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/work3-1.png" alt="The Worst QA Tester Ever image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work3-2.png" alt="The Worst QA Tester Ever image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work3-3.png" alt="The Worst QA Tester Ever image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work3-4.png" alt="The Worst QA Tester Ever image 4">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="left-section">
+          <h2 class="work-main-title">The worst QA tester ever 30/10/2025</h2>
+        </div>
+        
+        <div class="right-section">
+          <div id="work-desc"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/swiper-init.js"></script>
+  <script>
+    // 作品描述Markdown内容
+    const workDesc = `
+  **Cartoon Fantasy · Reverse-Logic Parody Game**  
+  *Publisher: Roamers Studio*  
+  *3D Design: Zhongling Xu (xuzzz) — Characters & Environment Integration*
+
+  A satirical game that overturns the traditional QA role.  
+
+  The tester becomes a covert corporate saboteur, derailing narrative logic, corrupting economic systems, distorting NPC behavior, and dismantling level structure through intentional "bugs" and chain-reaction exploits.  
+  
+  I created the full roster of stylized characters and assembled the terrain and architectural elements that shape this whimsical world — a cartoon fantasy realm amplified by exaggerated glitch effects and adaptive sound design.  
+  
+  A playful deconstruction of game-testing norms, where chaos becomes the method, and destruction becomes the goal.  
+    `;
+    document.getElementById('work-desc').innerHTML = marked.parse(workDesc);
+  </script>
+</body>
+</html>

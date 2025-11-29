@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集二标题</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <style>
+    /* Center carousel images for work2 only */
+    .swiper-container.work2 .swiper-slide img {
+      width: auto;
+      height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body class="dark-bg">
+  <div class="work-container">
+    <header class="work-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <h1>Fleece Iron Melody</h1>
+    </header>
+    
+    <main class="work-detail">
+      <!-- 图片轮播 -->
+      <div class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/work2-1.png" alt="Fleece Iron Melody image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work2-2.png" alt="Fleece Iron Melody image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work2-3.png" alt="Fleece Iron Melody image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work2-1.png" alt="Fleece Iron Melody image 4">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="left-section">
+          <h2 class="work-main-title">Fleece Iron Melody 18/11/2025</h2>
+          <div class="video-container">
+            <a href="https://youtu.be/qp_-a6hEAUc" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:8px 16px;background:#222;color:#fff;border-radius:4px;text-decoration:none;">Watch the video（YouTube）</a>
+          </div>
+        </div>
+        
+        <div class="right-section">
+          <div id="work-desc"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/swiper-init.js"></script>
+  <script>
+    // 作品描述Markdown内容
+    const workDesc = `
+  **Interactive Tactile–Sound Installation**  
+  *Design: Zhongling Xu*
+
+  An exploration of urban boundaries transformed through touch.  
+  
+  Iron mesh wrapped in soft wool becomes a warm, responsive surface, where copper wire and capacitive sensing convert human touch into real piano tones.  
+  
+  The cold grid of construction fencing dissolves into gentle melody, inviting passersby to re-perceive the city through softness, sound, and intimate interaction.  
+    `;
+    document.getElementById('work-desc').innerHTML = marked.parse(workDesc);
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapura Covenant</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="dark-bg">
+  <div class="work-container">
+    <header class="work-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <h1>Kapura Covenant</h1>
+    </header>
+    
+    <main class="work-detail">
+      <!-- 图片轮播 -->
+      <div class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/work7-1.png" alt="Kapura Covenant image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work7-2.png" alt="Kapura Covenant image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work7-3.png" alt="Kapura Covenant image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work7-4.png" alt="Kapura Covenant image 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work7-5.png" alt="Kapura Covenant image 5">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work7-6.png" alt="Kapura Covenant image 6">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="left-section">
+          <h2 class="work-main-title">Kapura Covenant 2022-2023</h2>
+        </div>
+        
+        <div class="right-section">
+          <div id="work-desc"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/swiper-init.js"></script>
+  <script>
+    // 作品描述Markdown内容
+    const workDesc = `
+  **Fantasy World Assets Collection**  
+  *Publisher: Hangzhou Electronic Soul Network Technology Co., Ltd.*  
+  *Design: Zhongling Xu — 3D Artist*
+
+  A selection of game-art projects produced during my time at Hangzhou Electronic Soul, alongside personal explorations in stylized modeling, environment art, and visual development.  
+    `;
+    document.getElementById('work-desc').innerHTML = marked.parse(workDesc);
+  </script>
+</body>
+</html>

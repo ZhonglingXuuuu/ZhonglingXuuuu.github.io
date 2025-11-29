@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Museum Nexus</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="dark-bg">
+  <div class="work-container">
+    <header class="work-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <h1>AR Museum Nexus</h1>
+    </header>
+    
+    <main class="work-detail">
+      <!-- 图片轮播 -->
+      <div class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/work5-1.png" alt="AR Museum Nexus image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work5-2.png" alt="AR Museum Nexus image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work5-3.png" alt="AR Museum Nexus image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work5-4.png" alt="AR Museum Nexus image 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work5-5.png" alt="AR Museum Nexus image 5">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="left-section">
+          <h2 class="work-main-title">AR Museum Nexus 3/2025</h2>
+        </div>
+        
+        <div class="right-section">
+          <div id="work-desc"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/swiper-init.js"></script>
+  <script>
+    // 作品描述Markdown内容
+    const workDesc = `
+  **Cultural XR Experience · AR Tourism Innovation**  
+  *Publisher: XOSMOPM*  
+  *PM & 3D Tech Support: Zhongling Xu*
+
+  A cross-media AR experience reimagining museums as interactive cultural gateways.  
+
+  From reviving extinct creatures in natural history halls to restoring traditional shadow-play in historic districts, this project blends virtual and physical layers to activate culture, expand narrative space, and transform passive viewing into exploratory interaction.  
+  
+  As project manager and 3D technical support, I coordinated workflow across XR content teams, ensured smooth integration of AR assets and scene logic, and aligned artistic vision with technical execution.  
+  
+  Together, we built a prototype for a future where museums link with city landmarks, forming a living network of cultural AR experiences.  
+    `;
+    document.getElementById('work-desc').innerHTML = marked.parse(workDesc);
+  </script>
+</body>
+</html>

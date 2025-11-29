@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrain Genesis</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="dark-bg">
+  <div class="work-container">
+    <header class="work-header">
+      <a href="index.html" class="back-btn">← Back</a>
+      <h1>Terrain Genesis</h1>
+    </header>
+    
+    <main class="work-detail">
+      <!-- 图片轮播 -->
+      <div class="swiper-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/work4-1.png" alt="Terrain Genesis image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work4-2.png" alt="Terrain Genesis image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work4-3.png" alt="Terrain Genesis image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work4-4.png" alt="Terrain Genesis image 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work4-5.png" alt="Terrain Genesis image 5">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/work4-6.png" alt="Terrain Genesis image 6">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="work-content">
+        <div class="left-section">
+          <h2 class="work-main-title">Terrain Genesis 15/9/2025</h2>
+        </div>
+        
+        <div class="right-section">
+          <div id="work-desc"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/swiper-init.js"></script>
+  <script>
+    // 作品描述Markdown内容
+    const workDesc = `
+  **Procedural Landscape · 3D Environment Design**  
+  *Design: Zhongling Xu*
+
+  A stylized island crafted through procedural and hand-sculpted terrain.  
+  
+  Seasonal variants reveal warm cliffs and snow-capped ridges, capturing scale, atmosphere, and environmental rhythm.  
+    `;
+    document.getElementById('work-desc').innerHTML = marked.parse(workDesc);
+  </script>
+</body>
+</html>

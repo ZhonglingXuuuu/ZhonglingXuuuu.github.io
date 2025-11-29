@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人艺术作品集</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="dark-bg">
+  <div class="container">
+    <aside class="profile">
+      <div id="profile-markdown"></div>
+    </aside>
+    <main class="portfolio-list">
+      <h2>2025---2022</h2>
+      <div class="works">
+        <a href="work1.html" class="work-item">
+          <img src="assets/images/work1-thumb.png" alt="Life Growing in Bondage thumbnail">
+          <span>Life Growing in Bondage</span>
+        </a>
+        <a href="work2.html" class="work-item">
+          <img src="assets/images/work2-thumb.png" alt="Fleece Iron Melody thumbnail">
+          <span>Fleece Iron Melody</span>
+        </a>
+        <a href="work3.html" class="work-item">
+          <img src="assets/images/work3-thumb.png" alt="The worst QA tester ever thumbnail">
+          <span>The worst QA tester ever</span>
+        </a>
+        <a href="work4.html" class="work-item">
+          <img src="assets/images/work4-thumb.png" alt="Terrain Genesis thumbnail">
+          <span>Terrain Genesis</span>
+        </a>
+        <a href="work5.html" class="work-item">
+          <img src="assets/images/work5-thumb.png" alt="AR Museum Nexus thumbnail">
+          <span>AR Museum Nexus</span>
+        </a>
+        <a href="work6.html" class="work-item">
+          <img src="assets/images/work6-thumb.png" alt="Touch Rhythm thumbnail">
+          <span>Touch Rhythm</span>
+        </a>
+        <a href="work7.html" class="work-item">
+          <img src="assets/images/work7-thumb.png" alt="Kapura Covenant thumbnail">
+          <span>Kapura Covenant</span>
+        </a>
+      </div>
+    </main>
+  </div>
+  <script>
+    // 个人简介Markdown内容
+    const profileMarkdown = `
+# Jocelyn  
+Zhongling XU  徐钟灵
+
+3D Designer & Game Artist  
+
+## About
+- 1. Currently pursuing a Master's degree in Creative Media (Game) at City University of Hong Kong 
+
+- 2. Focused on designing and producing stylized 3D assets and immersive media  
+
+- 3. Blends traditional art aesthetics with contemporary digital craftsmanship  
+
+- 4. Aims to create interactive, narrative-driven, and socially meaningful media experiences  
+
+- 5. Passionate about collaborating with creative teams to bring visual ideas to life  
+
+## Contact
+- · School Email: zhonglixu4-c@my.cityu.edu.hk  
+- · Personal Contact: zhonglingxuuuu@gmail.com  
+- · [Instagram](https://www.instagram.com/xzl23333/) 
+    `;
+    document.getElementById('profile-markdown').innerHTML = marked.parse(profileMarkdown);
+  </script>
+</body>
+</html>
